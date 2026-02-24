@@ -13,7 +13,9 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
@@ -23,11 +25,20 @@
     "nostr-tools": ">=2.0.0"
   },
   "devDependencies": {
+    "@types/node": "^25.3.0",
     "nostr-tools": "^2.23.0",
-    "typescript": "^5.5.0",
     "tsup": "^8.0.0",
+    "typescript": "^5.5.0",
     "vitest": "^2.0.0"
   },
-  "keywords": ["nostr", "state", "sync", "relay", "agent", "coordination", "encrypted"],
+  "keywords": [
+    "nostr",
+    "state",
+    "sync",
+    "relay",
+    "agent",
+    "coordination",
+    "encrypted"
+  ],
   "license": "MIT"
 }

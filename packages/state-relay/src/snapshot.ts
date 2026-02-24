@@ -90,7 +90,7 @@ export class SnapshotManager {
     return a.deviceId <= b.deviceId ? 'a' : 'b'
   }
 
-  selectBest(events: Array<{ id: string; created_at: number; tags: string[][] }>): typeof events[number] | null {
+  selectBest(events: Array<{ id: string; content: string; created_at: number; tags: string[][] }>): typeof events[number] | null {
     if (events.length === 0) return null
     if (events.length === 1) return events[0]
 
