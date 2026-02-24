@@ -1,0 +1,10 @@
+{
+  "name": "state-relay-monorepo",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build": "npm run build --workspace=packages/state-relay",
+    "test": "npm run test --workspace=packages/state-relay",
+    "lint": "tsc --noEmit --project packages/state-relay/tsconfig.json"
+  }
+}
